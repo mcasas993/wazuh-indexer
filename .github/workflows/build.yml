@@ -27,18 +27,18 @@ on:
         description: "Package format [tar, rpm, deb]"
         type: choice
         options:
-          - rpm
-          - deb
-          - tar
-        default: '[ "rpm", "deb" ]'
+          - ["rpm"]
+          - ["deb"]
+          - ["tar"]
+        default: '["rpm","deb"]'
         required: true
       architecture:
         description:  "Architecture of the package [x64, arm64]"
         type: choice
         options:
-          - x64
-          - arm64
-        default: '[ "x64", "arm64"  ]'
+          - ["x64"]
+          - ["arm64"]
+        default: '["x64","arm64"]'
         required: true
       checksum:
         description: "Generate package checksum?"
