@@ -34,6 +34,7 @@ on:
           - ["rpm", "tar"]
           - ["deb", "tar"]
           - ["rpm","deb","tar"]
+        default: ["rpm","deb"]
         required: true
       architecture:
         description:  "Architecture of the package [x64, arm64]"
@@ -42,6 +43,7 @@ on:
           - ["x64"]
           - ["arm64"]
           - ["x64","arm64"]
+        default: ["x64","arm64"]
         required: true
       checksum:
         description: "Generate package checksum?"
